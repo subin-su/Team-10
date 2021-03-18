@@ -6,7 +6,8 @@ const apiroutes=require("./apiroutes/apiroute");
 const htmlRoutes=require("./apiroutes/htmlRoutes")
 
 apiroutes(app)
-htmlRoutes(app)
+ htmlRoutes(app)
+
 
 
 app.use(express.urlencoded({extended: true}));
