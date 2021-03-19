@@ -11,7 +11,7 @@ const axios =require('axios')
 //     })
 // }
 module.exports=(app)=>{
-    app.put('/api/stockSearch', async (req, res) => {
+    app.get('/api/stockSearch:id', async (req, res) => {
         const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=ICUNIKLEZU9X9WT2`;
         //Async and await
         try {
