@@ -1,30 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     if (event) {
     }
-const val=document.getElementById("stock");
-const abc=document.getElementById("abc")
+var val=document.getElementById("stock");
+let abc=document.getElementById("abc")
 
-// val.addEventListener("click",()=>{
-    
-//    let search=abc.value;
-   
-//    const newStock={
-    
-//        stock:search.id
-//    }
-  
-//    fetch('/search/:id', {
-//     method: 'GET',
-//     headers: {
-//         'Content-Type': 'application/json',
-//     }
-
-//     // Json that response
-//     .then(res=>res.json())
-//     .then(data=>console.log(data))
-// })
-
-// })
 
 val.addEventListener('click', function () {
     // Sweet Alert
@@ -60,3 +39,5 @@ val.addEventListener('click', function () {
     })
 
 })
+
+
