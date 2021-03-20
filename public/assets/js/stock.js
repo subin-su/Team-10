@@ -2,27 +2,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (event) {
     }
 var val=document.getElementById("stock");
-let cab=document.getElementById("abc")
+var cab=document.getElementById("abc")
 
 
 val.addEventListener('click', function () {
     // Sweet Alert
-    var newStock = {
-        stockSearch: cab.value,
+   
     
-    }
-    fetch("/api/stockSearch:id", {
-        method: "GET",
+    fetch(`/api/stockSearch/${cab.value}`, {
+        method: "PUT",
         headers: {
             'Content-Type': 'application/json',
         },
         //body: JSON.stringify(newStock),
     })
+    
         // Json those results
         .then((response) => response.json())
         // Get the data!
         .then((data) => {
-            
+           console.log(data["Global Quote"]["01. symbol"])
             // Set Variable for the stock symbol
             let stockSymbol = data["Global Quote"]["01. symbol"]
             // // Set Variable for the stock price

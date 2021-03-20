@@ -11,12 +11,15 @@ const axios =require('axios')
 //     })
 // }
 module.exports=(app)=>{
-    app.get('/api/stockSearch:id', async (req, res) => {
-        const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=ICUNIKLEZU9X9WT2`;
+    app.put('/api/stockSearch/:id', async (req, res) => {
+        const search=req.params.id
+       
+        const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${search}&apikey=ICUNIKLEZU9X9WT2`;
         //Async and await
+        
         try {
             const stock = await axios.get(url);
-            res.json(stock.data);
+            res.send(stock.data);
         } catch (error) {
             console.log(error.message);
             res.status(500).send('Server Error - Whoops');
