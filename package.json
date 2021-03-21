@@ -25,7 +25,8 @@
     "jsdom": "^16.5.1",
     "mysql2": "^2.2.5",
     "node-fetch": "^2.6.1",
-    "sequelize": "^6.5.1"
+    "sequelize": "^6.5.1",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "sequelize-cli": "^6.2.0"
