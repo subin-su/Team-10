@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello There!</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="signinpagestyles.css">
+    <link rel="shortcut icon" type="image/jpg" href="../Team-10/public/assets/images/favicon.png"/>
+</head>
+<body>
+    <!-- Background & animion & navbar & title -->
+<div class="container-fluid">
+    <!-- Background animtion-->
+        <div class="background">
+           <div class="cube"></div>
+           <div class="cube"></div>
+           <div class="cube"></div>
+           <div class="cube"></div>
+          <div class="cube"></div>
+        </div>
+    <!-- header -->
+       <header>
+    <!-- navbar --> 
+         <nav>
+            <ul>
+               <li><a href="#">Return Home</a></li>
+           </nav>
+    <!-- title & content -->
+          <section class="header-content">
+             <h1>Hello, Investor! </h1>
+             <form name="login">
+                 Username<input type="text" name="userid"/>
+             </br>
+                 Password<input type="password" name="pswrd"/>
+                 <input type="button" onclick="check(this.form)" value="Login"/>
+                 <input type="reset" value="Cancel"/>
+             </form>
+             <script language="javascript">
+                 function check(form) { /*function to check userid & password*/
+                     /*the following code checkes whether the entered userid and password are matching*/
+                     if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                         window.open('target.html')/*opens the target page while Id & password matches*/
+                     }
+                     else {
+                         alert("Error Password or Username")/*displays error message*/
+                     }
+                 }
+             </script>
+          </section>
+      </header>
+    
+</body>
+</html> 
