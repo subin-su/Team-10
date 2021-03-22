@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<!-- Background & animion & navbar & title -->
+<div class="container-fluid">
+    <!-- Background animtion-->
+        <div class="background">
+           <div class="cube"></div>
+           <div class="cube"></div>
+           <div class="cube"></div>
+           <div class="cube"></div>
+          <div class="cube"></div>
+        </div>
+    <!-- header -->
+       <header>
+    <!-- navbar -->
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+           </nav>
+    <!-- title & content -->
+          <section class="header-content">
+             <h1>Stocks</h1>
+            <p> Welcome! Looking to invest in your future?<br>
+               Log in to see your picks and previous searches:</p>
+            <button>Sign In</button>
+            <button id="myButton" class="float-left submit-button">Beginner Info</button>
+          </section>
+      </header>
+    
+</body>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://www.investopedia.com/articles/basics/06/invest1000.asp";
+    };
+</script>
+</html>
