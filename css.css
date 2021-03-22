@@ -1,6 +1,8 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
+  display: inline;
+  margin: 0px;
 }
 .container-fluid {
   height: 100%;
