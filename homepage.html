@@ -33,7 +33,7 @@
              <h1>Stocks</h1>
             <p> Welcome! Looking to invest in your future?<br>
                Log in to see your picks and previous searches:</p>
-            <button><a href="./signinpage.html">Sign In</a></button>
+            <button id="myButton2">Sign In</button>
             <button id="myButton" class="float-left submit-button">Beginner Info</button>
           </section>
       </header>
@@ -42,6 +42,9 @@
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
         location.href = "https://www.investopedia.com/articles/basics/06/invest1000.asp";
+    };
+    document.getElementById("myButton2").onclick = function () {
+        location.href = "./signinpage.html";
     };
 </script>
 </html>
