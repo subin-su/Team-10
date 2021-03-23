@@ -1,6 +1,8 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
+  display: inline;
+  margin: 0px;
 }
 .container-fluid {
   height: 100%;
@@ -121,4 +123,80 @@ nav ul li:hover {
   100% {
     background-position: 0% 50%;
   }
+}
+
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;    
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #964CE2;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+label{  
+    color: #5ACFC9;  
+    font-size: 17px; 
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+    font-weight: 550;
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+}
+
+input[type=button] {
+  width: 140px;
+  color: #591bc5;
+  font-size: 14px;
+  border: 1px solid #efeef5;
+  font-weight: 500;
+  background: #efeef5;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input button:hover {
+  border-radius: 0;
 }

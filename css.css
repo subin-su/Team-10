@@ -102,7 +102,7 @@ nav ul li:hover {
   color: #591bc5;
   font-size: 17px;
   border: 1px solid #efeef5;
-  font-weight: 500;
+  font-weight: 550;
   background: #efeef5;
   border-radius: 20px;
   padding: 10px;
@@ -124,3 +124,8 @@ nav ul li:hover {
     background-position: 0% 50%;
   }
 }
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;

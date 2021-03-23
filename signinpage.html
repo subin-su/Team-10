@@ -25,18 +25,30 @@
     <!-- navbar --> 
          <nav>
             <ul>
-               <li><a href="#">Return Home</a></li>
+               <li><a href="./homepage.html">Return Home</a></li>
            </nav>
     <!-- title & content -->
           <section class="header-content">
              <h1>Hello, Investor! </h1>
-             <form name="login">
-                 Username<input type="text" name="userid"/>
-             </br>
-                 Password<input type="password" name="pswrd"/>
-                 <input type="button" onclick="check(this.form)" value="Login"/>
-                 <input type="reset" value="Cancel"/>
-             </form>
+             <div class="login">    
+                <form id="login" method="get" action="login.php">    
+                    <label><b>Username     
+                    </b>    
+                    </label>    
+                    <input type="text" name="Uname" id="Uname" placeholder="Username">    
+                    <br><br>    
+                    <label><b>Password     
+                    </b>    
+                    </label>    
+                    <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+                    <br><br>    
+                    <input type="button" name="log" id="log" value="Log In Here">       
+                    <br><br>    
+                    <input type="checkbox" id="check">    
+                    <span>Remember me</span>    
+                    <br><br>       
+                </form>     
+            </div>  
              <script language="javascript">
                  function check(form) { /*function to check userid & password*/
                      /*the following code checkes whether the entered userid and password are matching*/
